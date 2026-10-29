@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Planes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Planes</h1>
+
+        <section class="form-section">
+            <h2>Agregar Nuevo Plan</h2>
+            <form id="form-plan">
+                <input type="text" id="input-nombre" placeholder="Nombre del plan" required>
+                
+                <select id="input-precio" required>
+                    <option value="" disabled selected>Seleccioná el precio oficial del plan</option>
+                    <option value="1200">Plan Básico - $1200</option>
+                    <option value="2400">Plan Intermedio - $2400</option>
+                    <option value="4000">Plan Premium - $4000</option>
+                </select>
+
+                <button type="submit">+ Agregar Plan</button>
+            </form>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="input-buscar" placeholder="Buscar plan por nombre...">
+        </section>
+
+        <section class="catalog-section">
+            <h2>Catálogo Actual</h2>
+            <div id="contenedor-planes"></div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
